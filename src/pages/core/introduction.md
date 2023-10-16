@@ -4,9 +4,9 @@ description: Docs intro
 layout: ../../layouts/MainLayout.astro
 ---
 
-# Astro Design System Theme
+# Bluevine Platform UI and Native Mobile UI Documentation
 
-Astro Design System is the easiest way to start your our design system. Since Astro is compatible with many frameworks, you can import your components and document them right in the markdown files.
+Documenting our stuff
 
 ## Getting started
 
@@ -63,6 +63,3 @@ There's a class called `.component-preview` that you can use to wrap your compon
     <button class="text-white bg-blue-500 px-4 py-2 rounded-md">Your component</button>
 </div>
 
-### Have fun!
-
-Astro Design System template was made by **[@jordienr](https://twitter.com/jordienr)** for personal and commercial use.

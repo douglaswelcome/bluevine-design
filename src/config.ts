@@ -1,10 +1,10 @@
 export const SITE = {
-  title: "Astro Design System",
-  description: "Astro theme to build your design system fast.",
+  title: "Bluevine Design Documentation",
+  description: "Documentation for Bluevine's Platform UI and Native Mobile UI",
   defaultLanguage: "en_US",
-  twitter: "@jordienr",
-  github: "jordienr",
-  linkedin: "linkedinUsername",
+  twitter: "",
+  github: "",
+  linkedin: "",
 };
 
 export const OPEN_GRAPH = {
