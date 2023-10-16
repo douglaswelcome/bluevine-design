@@ -50,12 +50,12 @@ export const COLORS = {
 };
 
 export const TYPOGRAPHY = {
-  fontFamily: "Inter, system",
+  fontFamily: "Gellix, system",
   scale: [
-    { name: "h1", size: "22pt", weight: "400" },
-    { name: "h2", size: "17pt", weight: "500" },
-    { name: "h3", size: "13pt", weight: "600" },
-    { name: "h4", size: "13pt", weight: "500" },
+    { name: "h1", size: "22p", weight: "700" },
+    { name: "h2", size: "17p", weight: "700" },
+    { name: "h3", size: "13p", weight: "700" },
+    { name: "h4", size: "13p", weight: "700" },
     { name: "body", size: "13pt", weight: "400" },
     { name: "button", size: "13pt", weight: "400" },
     { name: "caption", size: "10pt", weight: "400" },

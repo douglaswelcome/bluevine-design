@@ -1,20 +1,22 @@
 ---
 import { SITE } from '../../config';
 import SkipToContent from './SkipToContent.astro';
+import BluevineLogo from './BluevineLogo.astro'
 
 const { currentPage } = Astro.props;
 ---
 
 <header class="p-3 bg-slate-100 bg-opacity-80 backdrop-blur-md border-b text-slate-900">
 	<SkipToContent />
-	<nav title="Top Navigation" class="max-w-7xl mx-auto flex justify-between items-center px-4">
-		<div>
-			<a class="text-lg font-medium" href="/">
+	<nav title="Top Navigation" class="max-w-7xl mx-auto flex justify-between items-center pr-4">
+
+			
+			<a class="flex flex-row gap-2 text-lg font-medium" href="/">
+				<BluevineLogo size="16px" color='#193dc4' />
 				<h1>
 					{SITE.title ?? "Documentation"}
 				</h1>
 			</a>
-		</div>
 		<div class="flex gap-2">
 		
 		<!-- <button onclick="toggleDarkMode()">theme</button> -->
