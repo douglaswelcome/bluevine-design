@@ -2,13 +2,22 @@
 title: Introduction
 description: Docs intro
 layout: ../../layouts/MainLayout.astro
+
+setup: |
+  import BluevineLogo from '../../components/Header/BluevineLogo.astro';
+
 ---
 
 # Bluevine Platform UI and Native Mobile UI Documentation
 
-Documenting our stuff
+Here's where we are documenting all things Bluevine Design.
 
-## Getting started
+### Links to Sources
+
+[Platform UI in Figma](https://www.figma.com/file/SZOKrIafqp6m5SMFChSCrY/NM-UI?type=design&node-id=1485-10460&mode=design)
+
+[Native Mobile UI in Figma](https://www.figma.com/file/SZOKrIafqp6m5SMFChSCrY/NM-UI?type=design&node-id=1485-10460&mode=design)
+
 
 ### Adding new sections
 

@@ -1,5 +1,6 @@
 ---
 import { SITE } from "../config";
+import '../styles/main.scss';
 const navItems = [
 	{
 		title: 'Core',
@@ -21,16 +22,17 @@ const navItems = [
 	}
 ]
 
+
 ---
 
 
 
-<div class="bg-slate-100 min-h-screen text-center">
+<div class="bg-slate-100 min-h-screen text-center home">
 	<header class="pt-12 pb-24 px-4 bg-gradient-to-br from-slate-700 to-black">
 		<div class="flex items-center justify-center p-3">
 			<img src="/bluevine-mark.svg" alt="Bluevine System Logo" class="w-12" >
 		</div>
-		<h1 class=" text-white text-4xl font-medium drop-shadow-sm">{SITE.title}</h1>
+		<h1 class=" text-white text-4xl drop-shadow-sm">{SITE.title}</h1>
 		<p class="text-lg mt-4 text-slate-300">{SITE.description}</p>
 	</header>
 	<nav>
