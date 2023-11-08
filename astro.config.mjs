@@ -1,17 +1,16 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
+
 import vue from "@astrojs/vue";
-
-
+import mdx from '@astrojs/mdx';
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [
-    // Enable Preact to support Preact JSX components.
-    vue(),
-    tailwind(),
-  ],
-
+  // Enable Preact to support Preact JSX components.
+  vue(),
+  mdx(), 
+  tailwind()],
   site: 'https://douglaswelcome.github.io',
-  base: '/bluevine-design',
+  base: '/'
 });
