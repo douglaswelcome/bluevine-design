@@ -12,7 +12,6 @@ export default defineConfig({
   mdx(), 
   tailwind()],
   site: 'https://douglaswelcome.github.io',
-  base: '/bluevine-design/',
-  output: 'static',
-
+  base: '/',
+  
 });
