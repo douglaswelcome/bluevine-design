@@ -1,4 +1,4 @@
-name: Deploy Bluev site to Pages
+name: Deploy Bluevine Design Doc to Pages
 
 on:
   # Runs on pushes targeting the default branch
