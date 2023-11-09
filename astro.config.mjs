@@ -12,5 +12,7 @@ export default defineConfig({
   mdx(), 
   tailwind()],
   site: 'https://douglaswelcome.github.io',
-  base: '/'
+  base: '/',
+  output: 'static',
+  
 });
