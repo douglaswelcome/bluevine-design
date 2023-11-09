@@ -30,4 +30,12 @@ export const SIDEBAR = [
 
   { text: "Patterns", header: true },
   { text: "Introduction", link: "/patterns/introduction" },
+
+  { text: "Core", header: true },
+  { text: "Introduction", link: "/core/introduction" },
+  { text: "Colors", link: "/core/colors" },
+  { text: "Typography", link: "/core/typography" },
+  { text: "Shadows", link: "/core/shadows" },
+
+
 ];
