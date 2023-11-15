@@ -1,5 +1,6 @@
 ---
-import { SIDEBAR } from '../config';
+import { platformUISidebar, nativeMobileUISidebar, productCopySidebar } from '../config';
+import { platformUISidebar } from '../config';
 const { currentPage } = Astro.props;
 const currentPageMatch = currentPage.slice(1);
 
@@ -19,7 +20,35 @@ const getLinkClasses = (link) => {
 		return baseClasses;
 	}
 }
+
+
+let SIDEBAR = platformUISidebar
+
+const setNav = () => {
+	if (currentPageMatch.includes('platform-ui')){
+		SIDEBAR = platformUISidebar
+		console.log(SIDEBAR)
+	}
+	else if (currentPageMatch.includes('native-mobile-ui')) {
+		SIDEBAR = nativeMobileUISidebar
+	} 
+	else if (currentPageMatch.includes('product-copy')) {
+		SIDEBAR = productCopySidebar
+	} 
+
+	else {
+		return 'dingle berries'
+	}
+}
+
+setNav()
+
+
+
 ---
+
+<!-- <h1>{SIDEBAR}</h1> -->
+
 <aside title="Site Navigation">
 	<!-- <Debug content={navigation} /> -->
 	<nav aria-labelledby="grid-left" class="w-64 p-4 border-r">

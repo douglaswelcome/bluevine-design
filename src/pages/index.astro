@@ -3,21 +3,21 @@ import { SITE } from "../config";
 import '../styles/main.scss';
 const navItems = [
 	{
-		title: 'Core',
-		description: 'Base colors, typography, shadows, and more.',
-		url: '/core/introduction',
+		title: 'Platform UI',
+		description: 'Everything related to the web-based platform',
+		url: '/platform-ui/introduction',
 		img: '/Core.jpg'
 	},
 	{
-		title: 'Components',
-		description: 'The building blocks for our UI.',
-		url: '/components/buttons',
+		title: 'Native Mobile UI',
+		description: 'Documentation for iOS and Android apps',
+		url: '/native-mobile-ui/introduction',
 		img: '/Components.jpg'
 	},
 	{
-		title: 'Patterns',
-		description: 'Common patterns for building interfaces.',
-		url: '/patterns/introduction',
+		title: 'Product Copy',
+		description: 'Copy guidelines and templates for product usage',
+		url: '/product-copy/introduction',
 		img: '/Patterns.jpg'
 	}
 ]
@@ -42,7 +42,7 @@ const navItems = [
 				<a href={url} class="flex flex-col bg-white rounded-md hover:-translate-y-1 hover:shadow-lg transition-all flex-1 items-center p-4">
 					<img src={img} alt={title}>
 					<h2 class="text-lg font-medium">{title}</h2>
-					<p class="text-slate-500">{description}</p>
+					<p class="text-slate-500 text-center">{description}</p>
 				</a>
 			))
 		}
