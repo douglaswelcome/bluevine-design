@@ -1,8 +1,9 @@
-@use 'fonts.scss';
+@use 'colors.scss';
+@use 'typography.scss';
 @use 'lists.scss';
 @use 'layout.scss';
 @use 'nav.scss';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities; 

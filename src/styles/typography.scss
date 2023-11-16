@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "Gellix";
+    src: url("/font/Gellix-Regular.woff") format("woff"), url("/font/Gellix-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: "Gellix";
+    src: url("/font/Gellix-Bold.woff") format("woff"), url("/font/Gellix-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    }
+
+:root {
+    --big--hero: 48px;
+    --big--display: 40px;
+    --big--title: 32px;
+    --big--header-1: 32px;
+    --big--header-2: 24px;
+    --big--header-3: 20px;
+    --big--header-4: 16px;
+    --big--header-5: 12px;
+    --input-text--label_no_content_title-case: 16px;
+    --input-text--label_no_content: 16px;
+    --input-text--label-with_content: 14px;
+    --input-text--content: 16px;
+    --input-text--message: 12px;
+    --input-text--message_error: 12px;
+    --input-text--character_count: 12px;
+    --input-text--link: 16px;
+    --control-text--label: 14px;
+    --control-text--label_link: 14px;
+    --control-text--sublabel: 12px;
+    --control-text--sublabel-bold: 12px;
+    --control-text--small_label: 12px;
+    --control-text--small_label_bold: 12px;
+    --body--body: 16px;
+    --body--body_title-case: 16px;
+    --body--link_title-case: 16px;
+    --body--link: 16px;
+    --body--subtitle: 20px;
+    --body--small: 14px;
+    --body--small_link: 14px;
+    --body--caption: 12px;
+    --body--caption_link: 12px;
+    --body--small_title-case: 14px;
+    --_select--option_state: 16px;
+    --_select--option_error: 16px;
+    --skywalker--label_title: 12px;
+}
+
+
+body {
+    font-family: "Gellix", sans-serif;
+}
+
+
+.content, .home {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 1.77rem;
+        font-weight: 700;
+        color:var(--text--default);
+    }
+    h1 {
+        font-size: var(--big--header-1);
+    }
+    h2 {
+        font-size: var(--big--header-2);
+    }
+    h3 {
+        font-size: var(--big--header-3);
+    }
+    h4 {
+        font-size: var(--big--header-4);
+    }
+    h5 {
+        font-size: var(--big--header-5);
+    }
+    h6 {
+        font-size: var(--big--header-6);
+    }
+
+
+    p {
+        margin-top: 0.77rem;
+        font-size: var(--body--body);
+        font-weight:400;
+        color:var(--text--default);
+    }
+    a {
+        font-weight:700;
+        color:var(--text--action-link);
+    }
+
+   
+    .secondary {
+        color:var(--text--label);
+    }
+    
+
+    
+
+    pre.astro-code {
+        margin: 0.5rem;
+    }
+
+    code {
+        font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+        Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    .component-preview {
+        padding: 4rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        background-image: url("/grid_dot.svg");
+        background-repeat: repeat;
+        background-size: 1.5rem;
+        border-radius: 0.33rem;
+        border: 1px solid theme("colors.slate.200");
+        margin: 0.5rem;
+        resize: both;
+    }
+
+    .astro-code {
+        padding: 1rem;
+        border-radius: 0.44rem;
+    }
+}
+
+.home {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0;
+    }
+}
