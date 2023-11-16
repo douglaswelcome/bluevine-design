@@ -6,48 +6,48 @@ import BluevineLogo from './BluevineLogo.astro'
 const { currentPage } = Astro.props;
 ---
 
-<header class="p-3 bg-slate-100 bg-opacity-80 backdrop-blur-md border-b text-slate-900">
+<header class=" text-slate-900 page-content h-16">
 	<SkipToContent />
-	<nav title="Top Navigation" class="max-w-7xl mx-auto flex items-center pr-4">
+	<nav title="Top Navigation" class="grid-cols-12 grid col-gap-4  grid-rows-1">
 
 			
-		<a class="flex flex-row gap-2 text-lg font-medium" href="/">
+		<a class="text-lg font-medium col-span-3 flex flex-row gap-2 self-center" href="/">
 			<BluevineLogo size="16px" color='#193dc4' />
 			<h1>
 				{SITE.title ?? "Documentation"}
 			</h1>
 		</a>
-		<div class="flex flex-row gap-2">
-			<a title="Platform UI" class="opacity-90 hover:opacity-100 hover:bg-blue-100 p-2 rounded-full transition-colors" href='/platform-ui/introduction'>
+		<div class="col-span-9 flex flex-row gap-4">
+			<a title="Platform UI" class="opacity-90 hover:opacity-100 hover:bg-blue-100  transition-colors nav-item" href='/platform-ui/introduction'>
 				<p>Platform UI</p>
 			</a>
-			<a title="Native Mobile UI" class="opacity-90 hover:opacity-100 hover:bg-blue-100 p-2 rounded-full transition-colors" href='/native-mobile-ui/introduction'>
+			<a title="Native Mobile UI" class="opacity-90 hover:opacity-100 hover:bg-blue-100 transition-colors" href='/native-mobile-ui/introduction'>
 				<p>Native Mobile UI</p>
 			</a>
-			<a title="Product Copy" class="opacity-90 hover:opacity-100 hover:bg-blue-100 p-2 rounded-full transition-colors" href='/product-copy/introduction'>
+			<a title="Product Copy" class="opacity-90 hover:opacity-100 hover:bg-blue-100  transition-colors" href='/product-copy/introduction'>
 				<p>Product Copy</p>
 			</a>
 		</div>
-		<div class="flex gap-2">
+		<div class="col-span-2">
 		
-		<!-- <button onclick="toggleDarkMode()">theme</button> -->
-		{ SITE.twitter &&
-			(<a title="Twitter" class="opacity-90 hover:opacity-100 hover:bg-blue-100 p-2 rounded-full transition-colors" href={'https://twitter.com/'+SITE.twitter}>
-				<img class="h-7" src="/twitter.svg" alt="twitter logo">
-			</a>)
-		}
-		{
-			SITE.github &&
-			(<a title="Github" class="opacity-80 hover:opacity-100 hover:bg-slate-200 p-2 rounded-full transition-colors" href={'https://github.com/'+SITE.github}>
-				<img class="h-7" src="/github.svg" alt="github logo">
-			</a>)
-		}
-		{
-			SITE.linkedin &&
-			(<a title="linkedin" class="opacity-80 hover:opacity-100 hover:bg-blue-50 p-2 rounded-full transition-colors" href={'https://linkedin.com/in/'+SITE.linkedin}>
-				<img class="h-7" src="/linkedin.svg" alt="linkedin logo">
-			</a>)
-		}
+			<!-- <button onclick="toggleDarkMode()">theme</button> -->
+			{ SITE.twitter &&
+				(<a title="Twitter" class="opacity-90 hover:opacity-100 hover:bg-blue-100 p-2 rounded-full transition-colors" href={'https://twitter.com/'+SITE.twitter}>
+					<img class="h-7" src="/twitter.svg" alt="twitter logo">
+				</a>)
+			}
+			{
+				SITE.github &&
+				(<a title="Github" class="opacity-80 hover:opacity-100 hover:bg-slate-200 p-2 rounded-full transition-colors" href={'https://github.com/'+SITE.github}>
+					<img class="h-7" src="/github.svg" alt="github logo">
+				</a>)
+			}
+			{
+				SITE.linkedin &&
+				(<a title="linkedin" class="opacity-80 hover:opacity-100 hover:bg-blue-50 p-2 rounded-full transition-colors" href={'https://linkedin.com/in/'+SITE.linkedin}>
+					<img class="h-7" src="/linkedin.svg" alt="linkedin logo">
+				</a>)
+			}
 		</div>
 	</nav>
 </header>

@@ -1,5 +1,5 @@
 export const SITE = {
-  title: "Bluevine Design Documentation",
+  title: "Design Documentation",
   description: "Documentation for Bluevine's Platform UI and Native Mobile UI",
   defaultLanguage: "en_US",
   twitter: "",
@@ -52,11 +52,9 @@ export const nativeMobileUISidebar = [
 
 export const productCopySidebar = [
   { text: "Introduction", link: "/product-copy/introduction" },
+  { text: "Guidelines", link: "/product-copy/guidelines" },
+  { text: "Style Guide", link: "/product-copy/style-guide" },
   
-  { text: "Guidelines", header: true },
-  { text: "Active Voice", link: "/product-copy/guidelines/active-voice" },
-  { text: "Important Info First", link: "/product-copy/guidelines/important-info-first" },
-  { text: "Scannable Text", link: "/product-copy/guidelines/scannable-text" },
-
+  
 
 ];
