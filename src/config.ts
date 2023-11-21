@@ -54,7 +54,11 @@ export const productCopySidebar = [
   { text: "Introduction", link: "/product-copy/introduction" },
   { text: "Guidelines", link: "/product-copy/guidelines" },
   { text: "Style Guide", link: "/product-copy/style-guide" },
-  
-  
 
 ];
+
+export const topNav =[
+  { text: "Platform UI", link: "/platform-ui/introduction" , section: "platform-ui" },
+  { text: "Native Mobile UI", link: "/native-mobile-ui/introduction", section: "native-mobile-ui" },
+  { text: "Product Copy", link: "/product-copy/introduction", section: "product-copy" },
+]
