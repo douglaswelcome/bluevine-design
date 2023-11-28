@@ -1,7 +1,7 @@
 ---
 	const { headers } = Astro.props;
 
-	console.log(headers)
+	console.log({headers})
 ---
 <ul class="flex flex-col gap-4">
 	{ headers.map(({ slug, text }) => {

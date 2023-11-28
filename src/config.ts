@@ -1,5 +1,5 @@
 export const SITE = {
-  title: "Design Documentation",
+  title: "Bluevine Design Documentation",
   description: "Documentation for Bluevine's Platform UI and Native Mobile UI",
   defaultLanguage: "en_US",
   twitter: "",

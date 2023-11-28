@@ -18,7 +18,7 @@ const currentPage = new URL(Astro.request.url).pathname;
 	<head>
 		<HeadCommon />
 		<HeadSEO {content} canonicalURL={Astro.canonicalURL} />
-		<title>{content.title ? `${content.title} 🚀 ${CONFIG.SITE.title}` : CONFIG.SITE.title}</title>
+		<title>{content.title ? `${content.title} • ${CONFIG.SITE.title}` : CONFIG.SITE.title}</title>
 	</head>
 
 	<body class="justify-center ">
